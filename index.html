@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licorería Fox | Entrega a domicilio en Lurín y Sur de Lima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header/Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wine-bottle"></i> Licorería Fox</h1>
+                <p class="slogan">Tu licor a un clic de distancia</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#zonas">Zonas de Entrega</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="whatsapp-header">
+                <a href="https://wa.me/51987177445" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner/Hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Licorería Fox</h2>
+                <h3>Entrega a domicilio en Lurín y el Sur de Lima</h3>
+                <p>Los mejores licores, cervezas y snacks directamente a tu puerta</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Envíos rápidos</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Precios en Soles</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Zona de cobertura</span>
+                    </div>
+                </div>
+                <a href="#productos" class="btn">Ver Catálogo Completo</a>
+                <a href="https://wa.me/51987177445" class="btn whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Pedir Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zonas de Entrega -->
+    <section class="zonas-entrega" id="zonas">
+        <div class="container">
+            <h2><i class="fas fa-map-marked-alt"></i> Zonas de Entrega</h2>
+            <div class="zonas-grid">
+                <div class="zona-card zona-principal">
+                    <div class="zona-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>La Estancia de Lurín</h3>
+                    <p>Todo el sector de La Estancia y alrededores</p>
+                    <span class="zona-tiempo">Entrega: 15-30 min</span>
+                </div>
+                <div class="zona-card">
+                    <div class="zona-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Lurín Centro</h3>
+                    <p>Zona céntrica de Lurín</p>
+                    <span class="zona-tiempo">Entrega: 20-40 min</span>
+                </div>
+                <div class="zona-card">
+                    <div class="zona-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Pachacámac</h3>
+                    <p>Urbanizaciones de Pachacámac</p>
+                    <span class="zona-tiempo">Entrega: 30-50 min</span>
+                </div>
+                <div class="zona-card">
+                    <div class="zona-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Villa El Salvador</h3>
+                    <p>Sector sur de Villa El Salvador</p>
+                    <span class="zona-tiempo">Entrega: 40-60 min</span>
+                </div>
+            </div>
+            <div class="zona-nota">
+                <p><i class="fas fa-info-circle"></i> <strong>Consulta disponibilidad:</strong> Para otras zonas del sur de Lima, escríbenos por WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Categorías -->
+    <section class="filtros">
+        <div class="container">
+            <h2><i class="fas fa-filter"></i> Filtra por Categoría</h2>
+            <div class="categorias">
+                <button class="categoria-btn active" data-categoria="todos">Todos</button>
+                <button class="categoria-btn" data-categoria="cerveza">Cervezas</button>
+                <button class="categoria-btn" data-categoria="whisky">Whisky</button>
+                <button class="categoria-btn" data-categoria="pisco">Pisco</button>
+                <button class="categoria-btn" data-categoria="ron">Ron</button>
+                <button class="categoria-btn" data-categoria="vino">Vino</button>
+                <button class="categoria-btn" data-categoria="vodka">Vodka</button>
+                <button class="categoria-btn" data-categoria="snack">Snacks</button>
+                <button class="categoria-btn" data-categoria="gaseosa">Gaseosas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <h2><i class="fas fa-store"></i> Nuestros Productos</h2>
+            <p class="section-subtitle">Todos nuestros precios están en Soles (S/)</p>
+            <div class="productos-grid" id="productos-container">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios y Información -->
+    <section class="info-tienda" id="horarios">
+        <div class="container">
+            <h2><i class="fas fa-info-circle"></i> Información Importante</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horarios de Atención</h3>
+                    <div class="horarios-detalle">
+                        <p><span class="dia">Lunes a Jueves:</span> 10:00 AM - 10:00 PM</p>
+                        <p><span class="dia">Viernes y Sábado:</span> 10:00 AM - 12:00 AM</p>
+                        <p><span class="dia">Domingos:</span> 11:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Envíos y Pagos</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check-circle"></i> Pago contra entrega</li>
+                        <li><i class="fas fa-check-circle"></i> Efectivo y Yape</li>
+                        <li><i class="fas fa-check-circle"></i> Envío gratuito en La Estancia (pedidos +S/15)</li>
+                        <li><i class="fas fa-check-circle"></i> Costo de envío varía por zona</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Promociones Especiales</h3>
+                    <div class="promociones">
+                        <div class="promo">
+                            <i class="fas fa-tag"></i>
+                            <span>2x1 en cervezas los miércoles</span>
+                        </div>
+                        <div class="promo">
+                            <i class="fas fa-tag"></i>
+                            <span>Descuento 10% en pedidos +S/150</span>
+                        </div>
+                        <div class="promo">
+                            <i class="fas fa-tag"></i>
+                            <span>Snack gratis en pedidos +S/80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+                    <p><strong>La Estancia de Lurín</strong></p>
+                    <p>Lurín, Lima - Perú</p>
+                    <p>Referencia: Calle ponceanas</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contáctanos</h3>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: <strong>+51 987 177 445</strong></p>
+                    <p><i class="fas fa-phone"></i> Teléfono: <strong>+51 987 177 445</strong></p>
+                    <p><i class="fas fa-envelope"></i> Email: <strong>visale4k@gmail.com</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Síguenos</h3>
+                    <div class="social">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    <i class="far fa-copyright"></i> 2025 Licorería La Estancia - La Estancia de Lurín.
+                </p>
+                <p class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i> Prohibida la venta a menores de 18 años. Consume con moderación.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51987177445" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">¡Pedir ahora!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
